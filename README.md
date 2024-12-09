@@ -32,11 +32,27 @@ GET /check
 #### Status Codes
 | Status Code | Type     |
 | :-------- | :------- |
-| `202` | `email is valid` | 
-| `400` | `email is locked` | 
-| `400` | `email is invalid` | 
-| `500` | `proxy / api error` | 
+| `2002` | `email is valid` | 
+| `5786` | `email is locked` | 
+| `4548` | `email is invalid` | 
+| `4752` | `proxy / api error` | 
 
+### 📜 Example Usage
+```python
+import requests
+
+
+def clark(email,password):
+    json={
+        "email": email,
+        "pass": password
+    }
+    r = requests.post("http://134.255.218.89:6969/check",json=json)
+    print(r.text)
+
+
+clark("clarkapi@hotmail.com", "clarkpassword123!")   
+```
 ## Authors
 
 - [@clarkdcc](https://github.com/clarkdcc)
