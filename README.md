@@ -18,7 +18,7 @@ http://134.255.218.89:6969
 #### Check Endpoint
 
 ```http
-GET /check?pass=<password>&email=<email>
+GET /check
 ```
 
 #### Check Endpoint - Payload
