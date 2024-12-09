@@ -32,10 +32,10 @@ GET /check
 #### Status Codes
 | Status Code | Type     |
 | :-------- | :------- |
-| `2002` | `email is valid` | 
-| `5786` | `email is locked` | 
-| `4548` | `email is invalid` | 
-| `4752` | `proxy / api error` | 
+| `202` | `email is valid` | 
+| `400` | `email is locked` | 
+| `400` | `email is invalid` | 
+| `500` | `proxy / api error` | 
 
 ## Authors
 
